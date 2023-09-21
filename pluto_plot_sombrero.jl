@@ -7,6 +7,9 @@ using InteractiveUtils
 # ╔═╡ 79995970-c9b5-11ed-118b-e9dc5ea0f0a0
 using Plots,SpecialFunctions,LinearAlgebra,PlutoUI
 
+# ╔═╡ 9d32e6c3-d746-42ce-8baf-28e3a4556c63
+plotly()
+
 # ╔═╡ a012ef7b-06da-4254-974b-60530029423f
 TableOfContents(title="Sombrero function", indent=true, depth=6, aside=true)
 
@@ -211,6 +214,12 @@ version = "0.9.3"
 deps = ["ArgTools", "FileWatching", "LibCURL", "NetworkOptions"]
 uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 version = "1.6.0"
+
+[[deps.EpollShim_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "8e9441ee83492030ace98f9789a654a6d0b1f643"
+uuid = "2702e6a9-849d-5ed8-8c21-79e8b8f9ee43"
+version = "0.0.20230411+0"
 
 [[deps.ExceptionUnwrapping]]
 deps = ["Test"]
@@ -885,7 +894,7 @@ uuid = "41fe7b60-77ed-43a1-b4f0-825fd5a5650d"
 version = "0.2.0"
 
 [[deps.Wayland_jll]]
-deps = ["Artifacts", "Expat_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Pkg", "XML2_jll"]
+deps = ["Artifacts", "EpollShim_jll", "Expat_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Pkg", "XML2_jll"]
 git-tree-sha1 = "ed8d92d9774b077c53e1da50fd81a36af3744c1c"
 uuid = "a2964d1f-97da-50d4-b82a-358c7fce9d89"
 version = "1.21.0+0"
@@ -1123,6 +1132,7 @@ version = "1.4.1+0"
 
 # ╔═╡ Cell order:
 # ╠═79995970-c9b5-11ed-118b-e9dc5ea0f0a0
+# ╠═9d32e6c3-d746-42ce-8baf-28e3a4556c63
 # ╠═a012ef7b-06da-4254-974b-60530029423f
 # ╠═9098bce2-6691-4caf-a177-e66b053f5cd0
 # ╠═8d99c1ed-bfaa-4062-a8f5-4736ee523b17
